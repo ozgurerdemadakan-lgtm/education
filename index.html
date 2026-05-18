@@ -8,7 +8,12 @@
         function selam() {
             let isim = document .getElementById("isim").value;
             let email = document.getElementById("email").value;
-            document.getElementById("sonuc").innerHTML = "silav"+isim+"-"+"emaila te"+email;
+            
+            if (isim ==="" || email === "") {
+                document.getElementById("sonuc").innerHTML = "Nave xwe u emaila xwe binivise";
+            }else{
+                document.getElementById("sonuc").innerHTML = "silav"+isim+"-"+"emaila te"+email;
+            }
         }
     </script>
     <body>
