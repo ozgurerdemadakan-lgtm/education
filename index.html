@@ -6,7 +6,9 @@
     </head>
     <script>
         function selam() {
-            document.getElementById("yazi").innerHTML = "bravo! kod xebat kir!";
+            let isim = document .getElementById("isim").value;
+            let email = document.getElementById("email").value;
+            document.getElementById("sonuc").innerHTML = "silav"+isim+"-"+"emaila te"+email;
         }
     </script>
     <body>
@@ -15,7 +17,11 @@
         <h3>Sernave Biçuk</h3>
 
         <p>Ev malpera maine.</p>
-        <p id="yaazi">ez kod fem dikim</p>
+        <p id="yazi">ez kod fem dikim</p>
+        
+        <input id="isim" placeholder="Nave xwe binivise">
+        <input id="email" placeholder="emaila xwe">
         <button onclick="selam()">pıleke</button>
+        <p id="sonuc"></p>
     </body>
 </html>
