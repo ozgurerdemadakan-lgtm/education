@@ -11,3 +11,10 @@ button {
     border: none;
     border-radius: 8px;
 }
+
+
+ul {
+    color: yellow;
+    font-size:20px;
+    list-style: none;
+}
